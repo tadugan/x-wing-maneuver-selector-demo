@@ -13,3 +13,12 @@ export const setLocation = (e, locationString, dispatch) => {
 
     dispatch({ type: 'SET_SELECTED_LOCATION', payload: locationString });
 };
+
+export const parseLocation = (locationString) => {
+    const parsedArray = locationString.split('-');
+
+    return {
+        direction: parsedArray[0],
+        range: parsedArray[1],
+    };
+};
