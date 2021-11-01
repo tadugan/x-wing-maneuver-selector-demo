@@ -2,4 +2,6 @@
     width: 260px;
     min-height: 80px;
     border: 1px solid black;
+    text-align: center;
+    margin: 0px auto;
 }
