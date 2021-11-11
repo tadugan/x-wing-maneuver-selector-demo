@@ -1,4 +1,4 @@
-const isStressed = (state = false, action) => {
+const stressStatus = (state = false, action) => {
     switch (action.type) {
         case 'SET_STRESS_TRUE':
             return true;
@@ -9,4 +9,4 @@ const isStressed = (state = false, action) => {
     }
 };
 
-export default isStressed;
+export default stressStatus;

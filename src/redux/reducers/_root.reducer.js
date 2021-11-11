@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import selectedLocation from './selectedLocation.reducer';
-import isStressed from './isStressed.reducer';
+import stressStatus from './stressStatus.reducer';
 
 const rootReducer = combineReducers({
     selectedLocation,
-    isStressed,
+    stressStatus,
 });
 
 export default rootReducer;
