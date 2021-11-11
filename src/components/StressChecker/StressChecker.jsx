@@ -18,9 +18,11 @@ function StressChecker() {
 
     return (
         <div className='stress-checker'>
-            <FormGroup>
-                <FormControlLabel control={<Switch />} onChange={() => toggleStress(stress, dispatch)} label={stressStatusText(stress)} />
-            </FormGroup>
+            <div className='stress-checker-switch' >
+                <FormGroup>
+                        <FormControlLabel control={<Switch />} onChange={() => toggleStress(stress, dispatch)} label={stressStatusText(stress)} />
+                </FormGroup>
+            </div>
         </div>
     );
 }

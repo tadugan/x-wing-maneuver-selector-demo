@@ -17,8 +17,8 @@ function ManeuverDisplay() {
 
     return (
         <div className="maneuver-display">
-            <p>Target Range: {range}</p>
-            <p>Target Direction: {direction}</p>
+            <p className='maneuver-display-text' >Target Range: {range}</p>
+            <p className='maneuver-display-text' >Target Direction: {direction}</p>
         </div>
     );
 }
