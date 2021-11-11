@@ -59,3 +59,19 @@ export const parseLocation = (locationString) => {
         range: convertedRange,
     };
 };
+
+export const toggleStress = (isStressed, dispatch) => {
+    if (isStressed) {
+        dispatch({ type: 'SET_STRESS_FALSE' });
+    } else {
+        dispatch({ type: 'SET_STRESS_TRUE' });
+    }
+};
+
+export const stressStatusText = (isStressed) => {
+    if (isStressed) {
+        return 'Stressed';
+    } else {
+        return 'Not stressed';
+    }
+};
