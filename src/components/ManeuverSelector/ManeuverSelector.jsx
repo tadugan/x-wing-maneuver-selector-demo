@@ -1,5 +1,6 @@
 import { FormControl } from '@material-ui/core';
 import { useSelector } from 'react-redux';
+import GenerateManeuver from '../GenerateManeuver/GenerateManeuver';
 import ManeuverDisplay from '../ManeuverDisplay/ManeuverDisplay';
 import RangeSelector from '../RangeSelector/RangeSelector';
 import StressChecker from '../StressChecker/StressChecker';
@@ -19,6 +20,8 @@ function ManeuverSelector() {
                 {/* Generate Maneuver button */}
                 <StressChecker isStressed={isStressed} />
 
+                {/* Generate Maneuver button and display */}
+                <GenerateManeuver />
 
                 {/* Image Map to select Range and direction */}
                 <RangeSelector />

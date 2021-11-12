@@ -1,0 +1,17 @@
+.generate-maneuver {
+    width: 260px;
+    min-height: 80px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0px auto;
+    padding: 16px 0px;
+}
+
+.generate-maneuver-button {
+    margin: 8px 0px;
+}
+
+.generate-maneuver-display {
+    text-align: left;
+    margin: 8px 0 0 16px;
+}
