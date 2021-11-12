@@ -75,3 +75,10 @@ export const stressStatusText = (isStressed) => {
         return 'Not stressed';
     }
 };
+
+export const generateManeuver = () => {
+    // TODO: Validate Inputs
+    // TODO: Get available maneuvers based on target location, store in an array
+    // TODO: select a recommended maneuver
+    // TODO:
+};
