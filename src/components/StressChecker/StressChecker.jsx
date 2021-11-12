@@ -1,15 +1,13 @@
 import { FormControlLabel, FormGroup, Switch } from '@material-ui/core';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
 import { stressStatusText, toggleStress } from '../../utils';
 import './StressChecker.css';
 
 
-function StressChecker() {
+function StressChecker({ isStressed }) {
     const dispatch = useDispatch();
 
-    const isStressed = useSelector(store => store.stressStatus);
     const [stress, setStress] = useState(false);
 
     useEffect(() => {
