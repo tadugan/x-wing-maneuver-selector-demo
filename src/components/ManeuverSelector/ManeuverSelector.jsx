@@ -7,17 +7,17 @@ import './ManeuverSelector.css';
 
 function ManeuverSelector() {
     const isStressed = useSelector(store => store.stressStatus);
-
+    const targetLocation = useSelector((store) => store.selectedLocation);
 
     return (
         <div className="maneuver-selector">
             <FormControl>
                 {/* Maneuver information Display */}
-                <ManeuverDisplay />
+                <ManeuverDisplay targetLocation={targetLocation} />
 
                 {/* Is the ship stressed? */}
                 {/* Generate Maneuver button */}
-                <StressChecker isStressed={isStressed}/>
+                <StressChecker isStressed={isStressed} />
 
 
                 {/* Image Map to select Range and direction */}

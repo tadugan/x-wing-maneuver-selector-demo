@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import { parseLocation } from '../../utils';
 import './ManeuverDisplay.css';
 
-function ManeuverDisplay() {
+function ManeuverDisplay({ targetLocation }) {
 
-    const targetLocation = useSelector((store) => store.selectedLocation);
     const [ direction, setDirection ] = useState('');
     const [ range, setRange ] = useState('');
 
